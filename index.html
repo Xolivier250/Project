@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenleaf</title>
+    <link rel="stylesheet" href="css/home.css">
+   
+</head>
+<body>
+    <center>
+        <div class="cont">
+        <div class="header">
+            <img src="image/logo.png" alt=""><button id="menu">Menu</button>
+            <nav><ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="price.html">Price</a></li>
+            </ul></nav>
+        </div>
+        <div class="body">
+            <div class="hero">
+                Hello, Wlcome to Greenleaf Website
+<p>Greenleaf  high quarity product provider</p>
+<a href="more.html">Learnmore..</a>
+            </div>
+            <div class="features">
+<h1>Greenleaf features</h1>
+<div class="product">
+    <div class="item">
+<p>name</p>
+<img src="image/orange1.jpeg" alt="">
+<p>Description</p>
+    </div>
+    <div class="item">
+        <p>Orange</p>
+        <img src="image/orange2.jpeg" alt="">
+        <p>Description</p>
+            </div>
+            <div class="item">
+                <p>Orange</p>
+                <img src="image/orange3.jpeg" alt="">
+                <p>Description</p>
+                    </div>
+                    <div class="item">
+                        <p>Indimu</p>
+                        <img src="image/indimu.jpeg" alt="">
+                        <p>Description</p>
+                            </div>
+                            <div class="item">
+                                <p>vocados</p>
+                                <img src="image/voka.jpeg" alt="">
+                                <p>Description</p>
+                                    </div>
+                                   
+                                    
+</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menu=document.getElementById("menu");
+var nav=document.querySelector("nav");
+var lin=document.querySelectorAll("#link");
+var count=1;
+menu.addEventListener("click",function () {
+ if (count==1) {
+    nav.style.display='block';
+    menu.style.backgroundColor='white';
+    count=0;
+ } 
+ else{
+    nav.style.display='none'; 
+    menu.style.backgroundColor='green';
+    count=1;
+ }  
+})
+    </script>
+    </center>
+</body>
+</html>
